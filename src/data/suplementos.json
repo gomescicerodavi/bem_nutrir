@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "nome": "Ômega-3",
+    "descricao": "Ácido graxo essencial para saúde do coração e cérebro",
+    "beneficios": ["Saúde cardiovascular", "Função cerebral", "Anti-inflamação"],
+    "origem": "Algas marinhas e peixes",
+    "recomendacao": "500-2000mg por dia",
+    "precaucoes": "Consulte um nutricionista antes de usar"
+  },
+  {
+    "id": 2,
+    "nome": "Vitamina D",
+    "descricao": "Essencial para absorção de cálcio e saúde óssea",
+    "beneficios": ["Saúde óssea", "Imunidade", "Absorção de cálcio"],
+    "origem": "Luz solar e alimentos fortificados",
+    "recomendacao": "600-800 UI por dia",
+    "precaucoes": "Não exceda 4000 UI diárias sem orientação"
+  },
+  {
+    "id": 3,
+    "nome": "Probióticos",
+    "descricao": "Bactérias benéficas para saúde intestinal e digestão",
+    "beneficios": ["Saúde digestiva", "Imunidade", "Absorção de nutrientes"],
+    "origem": "Iogurte, kefir, alimentos fermentados",
+    "recomendacao": "10 bilhões CFU por dia",
+    "precaucoes": "Armazene conforme indicado"
+  }
+]

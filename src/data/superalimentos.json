@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "nome": "Chia",
+    "descricao": "Sementes pequenas mas poderosas em nutrientes",
+    "beneficios": ["Alto teor de fibra", "Ômega-3", "Proteína"],
+    "nutricao_por_100g": {
+      "calorias": 486,
+      "proteina": 17,
+      "fibra": 34,
+      "omega3": 17
+    },
+    "como_usar": "Adicione a smoothies, iogurte ou faça pudim",
+    "imagem": "/images/chia.jpg"
+  },
+  {
+    "id": 2,
+    "nome": "Espirulina",
+    "descricao": "Alga verde azulada super concentrada em proteína",
+    "beneficios": ["80% de proteína", "Desintoxicação", "Energia"],
+    "nutricao_por_100g": {
+      "calorias": 290,
+      "proteina": 80,
+      "ferro": 28,
+      "vitaminas": "B12, Beta-caroteno"
+    },
+    "como_usar": "Adicione a sucos, smoothies ou em cápsulas",
+    "imagem": "/images/spirulina.jpg"
+  },
+  {
+    "id": 3,
+    "nome": "Goji Berry",
+    "descricao": "Fruta asiática repleta de antioxidantes",
+    "beneficios": ["Antioxidantes", "Imunidade", "Energia"],
+    "nutricao_por_100g": {
+      "calorias": 349,
+      "proteina": 14,
+      "antioxidantes": "Alto",
+      "vitaminas": "C, A, B"
+    },
+    "como_usar": "Coma como snack, adicione a cereais ou granola",
+    "imagem": "/images/goji.jpg"
+  }
+]

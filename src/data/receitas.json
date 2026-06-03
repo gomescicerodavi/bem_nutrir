@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "titulo": "Smoothie de Banana com Aveia",
+    "descricao": "Uma bebida nutritiva e deliciosa perfeita para o café da manhã",
+    "ingredientes": ["1 banana", "1/2 xícara de aveia", "1 xícara de leite", "1 colher de mel", "Gelo"],
+    "modo_preparo": "Bata todos os ingredientes no liquidificador até obter uma consistência cremosa.",
+    "tempo_preparo": 5,
+    "porcoes": 2,
+    "calorias": 180,
+    "proteinas": 8,
+    "carboidratos": 32,
+    "gorduras": 4,
+    "imagem": "/images/smoothie.jpg"
+  },
+  {
+    "id": 2,
+    "titulo": "Salada Detox com Folhas Verdes",
+    "descricao": "Salada fresca e cheia de nutrientes para um almoço saudável",
+    "ingredientes": ["2 xícaras de espinafre", "1 cenoura", "1/2 abacate", "1 tomate", "Azeite", "Limão"],
+    "modo_preparo": "Lave as verduras, pique e misture em uma tigela. Tempere com azeite e suco de limão.",
+    "tempo_preparo": 10,
+    "porcoes": 2,
+    "calorias": 150,
+    "proteinas": 5,
+    "carboidratos": 18,
+    "gorduras": 7,
+    "imagem": "/images/salada.jpg"
+  },
+  {
+    "id": 3,
+    "titulo": "Bolo de Cenoura Integral",
+    "descricao": "Bolo saudável feito com farinha integral e reduzido em açúcar",
+    "ingredientes": ["2 xícaras de farinha integral", "3 cenouras", "2 ovos", "1/2 xícara de óleo", "1/4 xícara de mel"],
+    "modo_preparo": "Ralar cenoura, misturar com farinha, ovos e mel. Assar em forno a 180°C por 40 minutos.",
+    "tempo_preparo": 50,
+    "porcoes": 8,
+    "calorias": 220,
+    "proteinas": 5,
+    "carboidratos": 35,
+    "gorduras": 8,
+    "imagem": "/images/bolo.jpg"
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "titulo": "5 Dicas Práticas para Beber Mais Água",
+    "descricao": "Aprenda estratégias simples para aumentar a ingestão de água diariamente",
+    "conteudo": "A água é essencial para o funcionamento do corpo. Dica 1: Tenha sempre uma garrafa com você. Dica 2: Beba um copo assim que acordar. Dica 3: Tome água antes das refeições. Dica 4: Adicione sabor com frutas. Dica 5: Configure lembretes no telefone.",
+    "categoria": "dicas",
+    "data": "2025-05-20",
+    "imagem": "/images/agua.jpg"
+  },
+  {
+    "id": 2,
+    "titulo": "Importância do Café da Manhã Nutritivo",
+    "descricao": "Por que não pular o café da manhã e o que comer para começar bem o dia",
+    "conteudo": "O café da manhã é a refeição mais importante do dia. Ele fornece energia e nutrientes essenciais. Um bom café deve incluir carboidratos, proteínas e gorduras saudáveis. Exemplos: ovos, frutas, grãos integrais e laticínios.",
+    "categoria": "dicas",
+    "data": "2025-05-18",
+    "imagem": "/images/cafe.jpg"
+  },
+  {
+    "id": 3,
+    "titulo": "Como Ler Rótulos de Alimentos",
+    "descricao": "Entenda as informações nutricionais para fazer escolhas mais saudáveis",
+    "conteudo": "Ler rótulos é fundamental. Verifique: porção, calorias, açúcar, sódio e gorduras. Compare produtos similares. Observe a lista de ingredientes - quanto menor e mais natural, melhor. Entenda as quantidades: %VD (Valor Diário).",
+    "categoria": "dicas",
+    "data": "2025-05-16",
+    "imagem": "/images/rotulo.jpg"
+  }
+]

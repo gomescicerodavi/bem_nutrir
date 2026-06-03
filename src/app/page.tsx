@@ -1,65 +1,111 @@
-import Image from "next/image";
+'use client';
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div style={{ padding: '2rem' }}>
+      {/* Banner Principal */}
+      <section style={{
+        background: 'linear-gradient(135deg, #2ecc71 0%, #27ae60 100%)',
+        color: 'white',
+        padding: '4rem 2rem',
+        borderRadius: '12px',
+        marginBottom: '3rem',
+        textAlign: 'center'
+      }}>
+        <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>🌿 Bem-Nutrir</h1>
+        <p style={{ fontSize: '1.2rem', marginBottom: '0' }}>
+          Sua jornada para uma vida mais saudável começa aqui!
+        </p>
+        <p style={{ fontSize: '0.95rem', marginTop: '0.5rem', opacity: 0.9 }}>
+          Receitas deliciosas, dicas práticas e conhecimento sobre nutrição funcional
+        </p>
+      </section>
+
+      {/* Cards de Destaque */}
+      <section style={{ marginBottom: '3rem' }}>
+        <h2 style={{ color: '#2c3e50', marginBottom: '2rem' }}>Explore Nossos Conteúdos</h2>
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+          gap: '2rem'
+        }}>
+          {[
+            { icon: '👨‍🍳', title: 'Receitas', desc: 'Pratos saudáveis e saborosos' },
+            { icon: '💡', title: 'Dicas Práticas', desc: 'Orientações para o dia a dia' },
+            { icon: '🍗', title: 'Nutrição Funcional', desc: 'Alimentos que curam' },
+            { icon: '💊', title: 'Suplementação', desc: 'Suplementos naturais' },
+            { icon: '⭐', title: 'Superalimentos', desc: 'Alimentos super nutritivos' },
+            { icon: '⚖️', title: 'Calculadora IMC', desc: 'Monitore seu peso' },
+          ].map((item, idx) => (
+            <div key={idx} style={{
+              background: 'white',
+              padding: '2rem',
+              borderRadius: '12px',
+              textAlign: 'center',
+              boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
+              transition: 'all 0.3s ease',
+              cursor: 'pointer'
+            }} onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-5px)';
+              e.currentTarget.style.boxShadow = '0 8px 16px rgba(0,0,0,0.15)';
+            }} onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)';
+              e.currentTarget.style.boxShadow = '0 2px 8px rgba(0,0,0,0.1)';
+            }}>
+              <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>{item.icon}</div>
+              <h3 style={{ margin: '0 0 0.5rem 0', color: '#2c3e50' }}>{item.title}</h3>
+              <p style={{ margin: 0, color: '#666', fontSize: '0.9rem' }}>{item.desc}</p>
+            </div>
+          ))}
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+      </section>
+
+      {/* HOME*/}
+      <section style={{
+        background: '#f9f9f9',
+        padding: '2rem',
+        borderRadius: '12px',
+        marginTop: '3rem'
+      }}>
+        <h2 style={{ color: '#2c3e50', marginBottom: '1rem' }}>Sobre o Bem-Nutrir</h2>
+        <p style={{ color: '#666', lineHeight: '1.8', marginBottom: '1rem' }}>
+          Bem-Nutrir é uma plataforma dedicada a ensinar adolescentes sobre a importância da nutrição 
+          equilibrada. Acreditamos que uma alimentação saudável é a base para uma vida plena e feliz.
+        </p>
+        <p style={{ color: '#666', lineHeight: '1.8' }}>
+          Aqui você encontrará receitas práticas, informações sobre alimentos funcionais, 
+          superalimentos, suplementação natural e ferramentas para monitorar sua saúde. Tudo pensado 
+          especialmente para você, adolescente que quer viver melhor!
+        </p>
+      </section>
+
+      {/* CTA */}
+      <section style={{
+        background: 'linear-gradient(135deg, #2ecc71 0%, #27ae60 100%)',
+        color: 'white',
+        padding: '2rem',
+        borderRadius: '12px',
+        textAlign: 'center',
+        marginTop: '3rem'
+      }}>
+        <h2 style={{ marginBottom: '1rem' }}>Comece Sua Jornada Hoje!</h2>
+        <p style={{ marginBottom: '1.5rem' }}>
+          Navegue pelos diferentes conteúdos no menu lateral e descubra o mundo da nutrição saudável.
+        </p>
+        <button style={{
+          background: 'white',
+          color: '#27ae60',
+          border: 'none',
+          padding: '0.8rem 2rem',
+          borderRadius: '6px',
+          cursor: 'pointer',
+          fontWeight: 'bold',
+          fontSize: '1rem',
+          transition: 'all 0.3s'
+        }}>
+          Explorar Conteúdos
+        </button>
+      </section>
     </div>
   );
 }

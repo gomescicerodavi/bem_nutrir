@@ -1,0 +1,35 @@
+import styles from '@/styles/Footer.module.css';
+
+export default function Footer() {
+  return (
+    <footer className={styles.footer}>
+      <div className={styles.container}>
+        <div className={styles.content}>
+          <div className={styles.section}>
+            <h3>Bem-Nutrir</h3>
+            <p>Plataforma de educação em nutrição para adolescentes.</p>
+          </div>
+          <div className={styles.section}>
+            <h4>Links Rápidos</h4>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/receitas">Receitas</a></li>
+              <li><a href="/dicas">Dicas</a></li>
+            </ul>
+          </div>
+          <div className={styles.section}>
+            <h4>Redes Sociais</h4>
+            <ul>
+              <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+              <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+              <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+        <div className={styles.bottom}>
+          <p>&copy; 2025 Bem-Nutrir. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+  );
+}

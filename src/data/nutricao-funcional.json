@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "titulo": "Alimentos Ricos em Antioxidantes",
+    "descricao": "Descubra alimentos que combatem radicais livres e protegem sua saúde",
+    "conteudo": "Antioxidantes são compostos que protegem as células do dano. Alimentos ricos incluem: frutas vermelhas, chocolate amargo, chá verde, nozes e sementes. Esses alimentos ajudam a prevenir envelhecimento precoce e doenças crônicas.",
+    "alimentos": ["Morango", "Blueberry", "Chocolate amargo", "Chá verde", "Nozes"],
+    "beneficios": ["Proteção celular", "Antienvelhecimento", "Prevenção de doenças"]
+  },
+  {
+    "id": 2,
+    "titulo": "Alimentos para Fortalecer Imunidade",
+    "descricao": "Reforce seu sistema imunológico com alimentos poderosos",
+    "conteudo": "Um sistema imunológico forte é sua melhor defesa. Alimentos como alho, gengibre, limão e cúrcuma têm propriedades antimicrobianas e anti-inflamatórias. Vitamina C é essencial - encontre em citrusos, tomate e pimentão.",
+    "alimentos": ["Alho", "Gengibre", "Limão", "Cúrcuma", "Pimentão"],
+    "beneficios": ["Defesa contra infecções", "Anti-inflamação", "Energia e vitalidade"]
+  },
+  {
+    "id": 3,
+    "titulo": "Alimentos para Saúde Cerebral",
+    "descricao": "Potencialize sua memória e concentração com esses alimentos",
+    "conteudo": "O cérebro precisa de nutrientes específicos para funcionar bem. Ômega-3 em peixes, vitaminas B em grãos integrais e ácidos graxos em abacate são essenciais. Esses nutrientes melhoram foco, memória e saúde mental.",
+    "alimentos": ["Salmão", "Ovos", "Abacate", "Amêndoas", "Brócolis"],
+    "beneficios": ["Melhor memória", "Maior concentração", "Saúde mental"]
+  }
+]

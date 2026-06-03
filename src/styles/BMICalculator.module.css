@@ -1,0 +1,168 @@
+.calculator {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.calculator h2 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.description {
+  color: #666;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+  font-size: 0.9rem;
+}
+
+.inputGroup input {
+  padding: 0.8rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.inputGroup input:focus {
+  outline: none;
+  border-color: #2ecc71;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.calcBtn,
+.clearBtn {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.calcBtn {
+  background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+  color: white;
+}
+
+.calcBtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(46, 204, 113, 0.3);
+}
+
+.calcBtn:active {
+  transform: scale(0.98);
+}
+
+.clearBtn {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.clearBtn:hover {
+  background: #d0d0d0;
+}
+
+.resultado {
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.resultadoContent h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.resultadoContent h3 span {
+  color: #2ecc71;
+  font-size: 2rem;
+}
+
+.categoria {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.escala {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.resultado.abaixo-do-peso {
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+  border-left: 4px solid #2196f3;
+  color: #0d47a1;
+}
+
+.resultado.peso-normal {
+  background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+  border-left: 4px solid #2ecc71;
+  color: #1b5e20;
+}
+
+.resultado.sobrepeso {
+  background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+  border-left: 4px solid #ff9800;
+  color: #e65100;
+}
+
+.resultado.obesidade {
+  background: linear-gradient(135deg, #ffebee 0%, #ef9a9a 100%);
+  border-left: 4px solid #f44336;
+  color: #b71c1c;
+}
+
+@media (max-width: 768px) {
+  .calculator {
+    padding: 1.5rem;
+  }
+
+  .calculator h2 {
+    font-size: 1.5rem;
+  }
+
+  .inputs,
+  .buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .escala {
+    grid-template-columns: 1fr;
+  }
+}
