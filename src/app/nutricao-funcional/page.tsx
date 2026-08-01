@@ -1,6 +1,5 @@
 'use client';
 
-import ArticleCard from '@/components/ArticleCard';
 import nutricaoData from '@/data/nutricao-funcional.json';
 import styles from '@/styles/PagesLayout.module.css';
 
