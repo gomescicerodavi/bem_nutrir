@@ -1,5 +1,7 @@
 'use client';
 
+import Link from 'next/link';
+
 export default function Home() {
   return (
     <div style={{ padding: '2rem' }}>
@@ -30,21 +32,23 @@ export default function Home() {
           gap: '2rem'
         }}>
           {[
-            { icon: '👨‍🍳', title: 'Receitas', desc: 'Pratos saudáveis e saborosos' },
-            { icon: '💡', title: 'Dicas Práticas', desc: 'Orientações para o dia a dia' },
-            { icon: '🍗', title: 'Nutrição Funcional', desc: 'Alimentos que curam' },
-            { icon: '💊', title: 'Suplementação', desc: 'Suplementos naturais' },
-            { icon: '⭐', title: 'Superalimentos', desc: 'Alimentos super nutritivos' },
-            { icon: '⚖️', title: 'Calculadora IMC', desc: 'Monitore seu peso' },
+            { icon: '👨‍🍳', title: 'Receitas', desc: 'Pratos saudáveis e saborosos', href: '/receitas' },
+            { icon: '💡', title: 'Dicas Práticas', desc: 'Orientações para o dia a dia', href: '/dicas' },
+            { icon: '🍗', title: 'Nutrição Funcional', desc: 'Alimentos que curam', href: '/nutricao-funcional' },
+            { icon: '💊', title: 'Suplementação', desc: 'Suplementos naturais', href: '/suplementacao' },
+            { icon: '⭐', title: 'Superalimentos', desc: 'Alimentos super nutritivos', href: '/superalimentos' },
+            { icon: '⚖️', title: 'Calculadora IMC', desc: 'Monitore seu peso', href: '/calculadora-imc' },
           ].map((item, idx) => (
-            <div key={idx} style={{
+            <Link key={idx} href={item.href} style={{
               background: 'white',
               padding: '2rem',
               borderRadius: '12px',
               textAlign: 'center',
               boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
               transition: 'all 0.3s ease',
-              cursor: 'pointer'
+              cursor: 'pointer',
+              textDecoration: 'none',
+              display: 'block'
             }} onMouseEnter={(e) => {
               e.currentTarget.style.transform = 'translateY(-5px)';
               e.currentTarget.style.boxShadow = '0 8px 16px rgba(0,0,0,0.15)';
@@ -55,7 +59,7 @@ export default function Home() {
               <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>{item.icon}</div>
               <h3 style={{ margin: '0 0 0.5rem 0', color: '#2c3e50' }}>{item.title}</h3>
               <p style={{ margin: 0, color: '#666', fontSize: '0.9rem' }}>{item.desc}</p>
-            </div>
+            </Link>
           ))}
         </div>
       </section>
@@ -92,7 +96,7 @@ export default function Home() {
         <p style={{ marginBottom: '1.5rem' }}>
           Navegue pelos diferentes conteúdos no menu lateral e descubra o mundo da nutrição saudável.
         </p>
-        <button style={{
+        <Link href="/receitas" style={{
           background: 'white',
           color: '#27ae60',
           border: 'none',
@@ -101,10 +105,12 @@ export default function Home() {
           cursor: 'pointer',
           fontWeight: 'bold',
           fontSize: '1rem',
-          transition: 'all 0.3s'
+          transition: 'all 0.3s',
+          display: 'inline-block',
+          textDecoration: 'none'
         }}>
           Explorar Conteúdos
-        </button>
+        </Link>
       </section>
     </div>
   );
