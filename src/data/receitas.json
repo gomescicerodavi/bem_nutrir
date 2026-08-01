@@ -1,17 +1,17 @@
 [
   {
     "id": 1,
-    "titulo": "Smoothie de Banana com Aveia",
-    "descricao": "Uma bebida nutritiva e deliciosa perfeita para o café da manhã",
-    "ingredientes": ["1 banana", "1/2 xícara de aveia", "1 xícara de leite", "1 colher de mel", "Gelo"],
-    "modo_preparo": "Bata todos os ingredientes no liquidificador até obter uma consistência cremosa.",
-    "tempo_preparo": 5,
-    "porcoes": 2,
-    "calorias": 180,
-    "proteinas": 8,
-    "carboidratos": 32,
-    "gorduras": 4,
-    "imagem": "/images/smoothie.jpg"
+    "titulo": "Nhoque de Mandioquinha",
+    "descricao": "Nhoque leve e macio, ideal para uma refeição aconchegante com molho de manteiga e sálvia ou tomate.",
+    "ingredientes": ["700 g de mandioquinha", "1 gema", "1 colher (sopa) de manteiga", "1 colher (chá) de sal", "1 a 1½ xícara de farinha de trigo", "Noz-moscada e pimenta-do-reino a gosto"],
+    "modo_preparo": "Cozinhe a mandioquinha até ficar macia, escorra e deixe secar. Passe ainda quente pelo espremedor, misture a gema, manteiga, sal e temperos, adicione a farinha aos poucos e amasse delicadamente. Modele os rolinhos, corte em pedaços, cozinhe em água fervente e sirva com molho de manteiga e sálvia ou tomate.",
+    "tempo_preparo": 45,
+    "porcoes": 4,
+    "calorias": 320,
+    "proteinas": 9,
+    "carboidratos": 48,
+    "gorduras": 8,
+    "imagem": "/images/mandioquinha.jpg"
   },
   {
     "id": 2,

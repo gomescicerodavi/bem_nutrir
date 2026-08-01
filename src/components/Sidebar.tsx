@@ -16,7 +16,6 @@ export default function Sidebar() {
     { label: 'Superalimentos', href: '/superalimentos', icon: '⭐' },
     { label: 'Calculadora IMC', href: '/calculadora-imc', icon: '⚖️' },
     { label: 'Instagram', href: '#', icon: '📸', external: true },
-    { label: 'Admin', href: '/admin', icon: '⚙️' },
   ];
 
   return (

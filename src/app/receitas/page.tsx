@@ -43,6 +43,7 @@ export default function Receitas() {
           filteredReceitas.map(receita => (
             <RecipeCard
               key={receita.id}
+              id={receita.id}
               titulo={receita.titulo}
               descricao={receita.descricao}
               tempo_preparo={receita.tempo_preparo}

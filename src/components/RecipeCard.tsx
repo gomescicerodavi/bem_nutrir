@@ -1,6 +1,8 @@
+import Link from 'next/link';
 import styles from '@/styles/RecipeCard.module.css';
 
 interface RecipeCardProps {
+  id: number;
   titulo: string;
   descricao: string;
   tempo_preparo: number;
@@ -9,6 +11,7 @@ interface RecipeCardProps {
 }
 
 export default function RecipeCard({ 
+  id,
   titulo, 
   descricao, 
   tempo_preparo, 
@@ -28,7 +31,9 @@ export default function RecipeCard({
           <span className={styles.infoItem}>🍽️ {porcoes} porções</span>
           <span className={styles.infoItem}>🔥 {calorias} kcal</span>
         </div>
-        <button className={styles.button}>Ver Receita</button>
+        <Link href={`/receitas/${id}`} className={styles.button}>
+          Ver Receita
+        </Link>
       </div>
     </div>
   );
