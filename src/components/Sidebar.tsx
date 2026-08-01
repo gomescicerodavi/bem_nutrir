@@ -26,7 +26,7 @@ export default function Sidebar() {
             <li key={item.href} className={styles.menuItem}>
               {item.external ? (
                 <a 
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/bemnutrir._?igsh=MTE1MHp6a3ZhN2hyNA=="
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.link}

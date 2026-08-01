@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import styles from '@/styles/Footer.module.css';
 
 export default function Footer() {
@@ -13,22 +12,21 @@ export default function Footer() {
           <div className={styles.section}>
             <h4>Links Rápidos</h4>
             <ul>
-              <li><Link href="/">Home</Link></li>
-              <li><Link href="/receitas">Receitas</Link></li>
-              <li><Link href="/dicas">Dicas</Link></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/receitas">Receitas</a></li>
+              <li><a href="/dicas">Dicas</a></li>
             </ul>
           </div>
           <div className={styles.section}>
             <h4>Redes Sociais</h4>
             <ul>
-              <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-              <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-              <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+              <li><a href="https://www.instagram.com/bemnutrir._?igsh=MTE1MHp6a3ZhN2hyNA==" target="_blank" rel="noopener noreferrer">Instagram
+              </a></li>
             </ul>
           </div>
         </div>
         <div className={styles.bottom}>
-          <p>&copy; 2026 Bem-Nutrir. Todos os direitos reservados.</p>
+          <p>&copy; 2025 Bem-Nutrir. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
