@@ -1,6 +1,8 @@
+import Link from 'next/link';
 import styles from '@/styles/ArticleCard.module.css';
 
 interface ArticleCardProps {
+  id: number;
   titulo: string;
   descricao: string;
   data: string;
@@ -8,6 +10,7 @@ interface ArticleCardProps {
 }
 
 export default function ArticleCard({ 
+  id,
   titulo, 
   descricao, 
   data,
@@ -24,7 +27,9 @@ export default function ArticleCard({
         <p className={styles.description}>{descricao}</p>
         <div className={styles.meta}>
           <span className={styles.date}>📅 {new Date(data).toLocaleDateString('pt-BR')}</span>
-          <button className={styles.button}>Ler Mais</button>
+          <Link href={`/dicas/${id}`} className={styles.button}>
+            Ler Mais
+          </Link>
         </div>
       </div>
     </article>

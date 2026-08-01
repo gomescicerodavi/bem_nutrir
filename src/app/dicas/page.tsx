@@ -16,6 +16,7 @@ export default function Dicas() {
         {artigos.map(artigo => (
           <ArticleCard
             key={artigo.id}
+            id={artigo.id}
             titulo={artigo.titulo}
             descricao={artigo.descricao}
             data={artigo.data}

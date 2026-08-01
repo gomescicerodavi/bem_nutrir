@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from '@/styles/Footer.module.css';
 
 export default function Footer() {
@@ -12,9 +13,9 @@ export default function Footer() {
           <div className={styles.section}>
             <h4>Links Rápidos</h4>
             <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/receitas">Receitas</a></li>
-              <li><a href="/dicas">Dicas</a></li>
+              <li><Link href="/">Home</Link></li>
+              <li><Link href="/receitas">Receitas</Link></li>
+              <li><Link href="/dicas">Dicas</Link></li>
             </ul>
           </div>
           <div className={styles.section}>
@@ -26,7 +27,7 @@ export default function Footer() {
           </div>
         </div>
         <div className={styles.bottom}>
-          <p>&copy; 2025 Bem-Nutrir. Todos os direitos reservados.</p>
+          <p>&copy; 2026 Bem-Nutrir. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
