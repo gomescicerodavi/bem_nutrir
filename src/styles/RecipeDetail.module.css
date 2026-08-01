@@ -48,16 +48,23 @@
 
 .content {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 2rem;
+  gap: 1.5rem;
   margin-top: 2rem;
+}
+
+.detailGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
 }
 
 .card {
   background: white;
   border-radius: 16px;
-  padding: 1.5rem;
+  padding: 1.75rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  line-height: 1.8;
+  color: #555;
 }
 
 .card h2 {
@@ -67,10 +74,33 @@
   font-size: 1.2rem;
 }
 
-.list {
-  padding-left: 1.1rem;
-  color: #555;
-  line-height: 1.8;
+.list,
+.nutritionList,
+.steps {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.list li,
+.nutritionList li {
+  margin-bottom: 0.6rem;
+}
+
+.steps li {
+  margin-bottom: 0.8rem;
+}
+
+.noteCard {
+  background: #f7fff6;
+  border-left: 4px solid #2ecc71;
+  padding: 1.5rem;
+  border-radius: 16px;
+  color: #2d6b36;
+}
+
+.noteCard h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
 }
 
 @media (max-width: 768px) {

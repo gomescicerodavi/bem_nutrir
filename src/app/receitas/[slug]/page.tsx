@@ -15,6 +15,11 @@ export default async function RecipeDetail({ params }: RecipeDetailProps) {
     notFound();
   }
 
+  const preparoSteps = receita.modo_preparo
+    .split('. ')
+    .map((step) => step.trim())
+    .filter((step) => step.length > 0);
+
   return (
     <div className={styles.container}>
       <Link href="/receitas" className={styles.backLink}>
@@ -32,18 +37,43 @@ export default async function RecipeDetail({ params }: RecipeDetailProps) {
       </section>
 
       <section className={styles.content}>
-        <div className={styles.card}>
-          <h2>Ingredientes</h2>
-          <ul className={styles.list}>
-            {receita.ingredientes.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
+        <div className={styles.detailGrid}>
+          <div className={styles.card}>
+            <h2>Ingredientes</h2>
+            <ul className={styles.list}>
+              {receita.ingredientes.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </div>
+
+          <div className={styles.card}>
+            <h2>Informação nutricional</h2>
+            <ul className={styles.nutritionList}>
+              <li>Calorias: {receita.calorias} kcal</li>
+              <li>Proteínas: {receita.proteinas} g</li>
+              <li>Carboidratos: {receita.carboidratos} g</li>
+              <li>Gorduras: {receita.gorduras} g</li>
+            </ul>
+          </div>
         </div>
 
         <div className={styles.card}>
           <h2>Modo de preparo</h2>
-          <p className={styles.list}>{receita.modo_preparo}</p>
+          <ol className={styles.steps}>
+            {preparoSteps.map((step, index) => (
+              <li key={`${index}-${step}`}>{step}</li>
+            ))}
+          </ol>
+        </div>
+
+        <div className={styles.noteCard}>
+          <h2>Dica especial</h2>
+          <p>
+            Experimente ajustar os temperos ao final do preparo e sirva imediatamente para
+            aproveitar sabores frescos. Para uma versão ainda mais leve, reduza um pouco a
+            quantidade de farinha ou adicione ervas frescas ao final.
+          </p>
         </div>
       </section>
     </div>
